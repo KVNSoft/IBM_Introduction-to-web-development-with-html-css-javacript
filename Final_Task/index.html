@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title><br/>
+    </head>
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1> <br/>
+            
+            <!--Creating input field using the type as number for Interest Selection -->
+            Amount <input type="number"  id="principal">  <br/><br>
+            <!--Creating slider using the type as range for Interest Selection -->
+            Rate <input type="range"  id="rate" min= "1" max= "20" value="10.25" step="0.25" onchange="updateRate()"> <span id="rate_val">
+                10.25%
+                </span>
+                <br/><br>
+
+            <!--Creating drop-down list with 10 options for Interest Selection --> 
+            No. of Years <select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>  
+            </br><br>
+
+            <!--Creating button to Calculate result for Interest Selection -->     
+            <button id="calculate" onclick="compute()"> Compute Interest</button>
+            <br><br>
+
+            <!--Creating Output field for Interest Selection --> 
+            <span id="result"></span>
+     
+            </span>
+            <br><br>
+            
+            <footer>
+
+                &#169; This Calculator belongs to <br/>Viktor Kuntsevych
+        
+        
+            </footer>
+
+        </div>
+    </body>
+</html>
